@@ -1,0 +1,21 @@
+{
+    "listeners": [
+        {
+            "bind_ip": "127.0.0.1",
+            "port": 4242,
+            "enable_socks_4": true,
+            "enable_socks_5": true
+        }
+    ],
+    "chains": [
+        {
+            "logic": "random",
+            "entries": [
+                {
+                    "host": "127.0.0.1",
+                    "port": 9050
+                }
+            ]
+        }
+    ]
+}

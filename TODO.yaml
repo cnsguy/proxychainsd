@@ -1,0 +1,20 @@
+core:
+  - Addr, Port could probably be merged in server
+  - Support for socks5
+  - Actual chaining
+  - Warn / deny people if they run a socks4a listener (supports no auth) and socks5 with auth
+  - Document that socks4 userids are not supported
+  - Actually might drop socks4 listening in general, who the hell uses that still?
+
+log:
+  - loggers should wrap an io.Writer
+  - stdout / stderr by default
+  - multiplexer
+  - log levels?
+
+config:
+  - validation / etc should be done with UnmarshalJSON override
+  - authentication
+
+tests:
+  - write them
